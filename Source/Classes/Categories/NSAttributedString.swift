@@ -9,7 +9,7 @@
 import UIKit
 
 extension NSAttributedString {
-    static func attributes(from label: NantesLabel) -> [NSAttributedString.Key: Any] {
+    public static func attributes(from label: NantesLabel) -> [NSAttributedString.Key: Any] {
         var attributes: [NSAttributedString.Key: Any] = [:]
 
         attributes[.font] = label.font
