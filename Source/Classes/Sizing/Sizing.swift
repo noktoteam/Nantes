@@ -35,7 +35,7 @@ extension NantesLabel {
         return NantesLabel.suggestFrameSize(for: attributedString, framesetter: framesetter, withSize: constraints, numberOfLines: limitedToNumberOfLines)
     }
 
-    private static func suggestFrameSize(for attributedString: NSAttributedString, framesetter: CTFramesetter, withSize size: CGSize, numberOfLines: Int) -> CGSize {
+    public static func suggestFrameSize(for attributedString: NSAttributedString, framesetter: CTFramesetter, withSize size: CGSize, numberOfLines: Int) -> CGSize {
         var rangeToSize = CFRange(location: 0, length: attributedString.length)
         let constraints = CGSize(width: size.width, height: CGFloat.greatestFiniteMagnitude)
 
